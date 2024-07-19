@@ -1,5 +1,5 @@
 __pycache__
-dealer
+env
 db.sqlite3
 staticfiles
 .env
