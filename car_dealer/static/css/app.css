@@ -1,6 +1,5 @@
 /*---------------------------------------------"
 Template Name: DriveLux
-Template URL: https://uiparadox.co.uk/templates/drivelux/
 Description: DriveLux - Car Rental HTML5 Bootstrap website Template
 Version: 1.0.0
 
@@ -22,7 +21,6 @@ STYLE SHEET INDEXING
 /*-------------------------
     Fonts
 -------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
 
 /*-------------------------
     Variables
@@ -1818,7 +1816,6 @@ strong {
 }
 
 .heading.left h1::before {
-  content: url(../media/heading/left-arrow-shape.png);
   left: 0;
 }
 
@@ -1827,7 +1824,6 @@ strong {
 }
 
 .heading.right h1::before {
-  content: url(../media/heading/right-arrow-shape.png);
   right: 0;
 }
 
@@ -4219,5 +4215,3 @@ a#boton-medio {
 .contact .info-block .information-section .information-block a:hover {
   color: #0000c3;
 }
-
-/*# sourceMappingURL=app.css.map */
