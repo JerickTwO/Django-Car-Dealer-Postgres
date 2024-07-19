@@ -25,8 +25,6 @@ SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -129,6 +127,8 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+ALLOWED_HOSTS=['localhost', 'cisne-car.up.railway.app']
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
