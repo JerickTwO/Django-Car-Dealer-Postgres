@@ -1,2 +1,1 @@
-release: python manage.py collectstatic --noinput
-web: gunicorn dealer_project.wsgi --log-file -
+web: python manage.py collectstatic && gunicorn dealer_project.wsgi 
