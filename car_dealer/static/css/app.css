@@ -92,9 +92,7 @@ h2#text-rent {
     font-size: 20px;
   }
 }
-.img {
-  background: url(../media/heading/left-arrow-shape.png);
-}
+
 
 /*-------------------------
     Responsive
@@ -2213,7 +2211,6 @@ a#boton-medio {
 }
 
 .footer .detail-blog .footer-detail {
-  background: url(../media/bg/footer-shape.webp);
   padding: 93px 0 100px 96px;
   margin-left: -96px;
   width: 100%;
@@ -2367,7 +2364,6 @@ a#boton-medio {
 }
 
 .banner {
-  background: url(../media/bg/banner-bg-min.webp);
   background-repeat: no-repeat;
   background-position: left bottom;
   padding: 140px 0 100px 0;
@@ -2377,7 +2373,6 @@ a#boton-medio {
 
 @media (max-width: 992px) {
   .banner {
-    background: url(../media/bg/banner-bg-2.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 1300px;
@@ -2510,7 +2505,6 @@ a#boton-medio {
 }
 
 .inner-banner {
-  background: url(../media/bg/newsletter-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3651,7 +3645,6 @@ a#boton-medio {
 }
 
 .newsletter {
-  background: url(../media/bg/newsletter-bg.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
