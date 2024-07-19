@@ -1,0 +1,135 @@
+/*---------------------------------------------"
+Template Name: DriveLux
+Template URL: https://uiparadox.co.uk/templates/drivelux/
+Description: DriveLux - Car Rental HTML5 Bootstrap website Template
+Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+$accent-1: #2CB9AD;
+$gradient:  linear-gradient(60.89deg, #009689 -29.21%, #3FCCC0 66.61%, #30D3C5 109.45%);
+$font-primary: 'Lato', sans-serif;
+$font-sec: 'Playfair Display', serif;
+$font-awesome: "Font Awesome 5 Pro";
+$transition: all 0.5s ease-in-out;
+$black: #2C2D2F;
+$black-1: #1B1C1E;
+$black-2: #0D0D0D;
+$white: #FAFAFA;
+$gray-1: #F0F2F4;
+$gray-2: #D6D8DB;
+$gray-3: #AFB1B6;
+$gray-4: #797D86;
+$bg: linear-gradient(180deg, #011415 0%, #062B2E 100%);
+$inverse-bg: linear-gradient(180deg, #062B2E 0%, #011415 100%);
+$font-101: 101px;
+$font-76: 76px;
+$font-57: 57px;
+$font-43: 43px;
+$font-32: 32px;
+$font-24: 24px;
+$font-20: 20px;
+$font-14: 14px;
+
+.img{
+  background: url(../media/heading/left-arrow-shape.png);
+}
+/*-------------------------
+    Responsive
+-------------------------*/
+@import "helpers/mixins";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+ 
+/*-------------------------
+    Spacing
+-------------------------*/
+@import "helpers/spacing";
+
+/*-------------------------
+    Helper Classes
+-------------------------*/
+@import "helpers/classes";
+
+/*-------------------------
+  Buttons
+-------------------------*/
+@import "elements/buttons";
+
+/*-------------------------
+  Element
+-------------------------*/
+@import "elements/search-input";
+
+/*-------------------------
+  Popup
+-------------------------*/
+@import "elements/popup";
+
+/*-------------------------
+  Countdown
+-------------------------*/
+@import "elements/countdown";
+
+/*-------------------------
+  Headings
+-------------------------*/
+@import "elements/heading";
+
+/*-------------------------
+  Preloader Styles
+-------------------------*/
+@import "layout/preloader";
+
+// @import "layout/modal";
+
+@import "layout/header";
+
+@import "layout/footer";
+
+@import "layout/banner";
+
+@import "layout/inner-banner";
+
+@import "layout/logo";
+
+@import "layout/car-rent";
+
+@import "layout/book-car";
+
+@import "layout/categories";
+
+@import "layout/choose";
+
+@import "layout/news-letter";
+
+@import "layout/review";
+
+@import "layout/about";
+
+@import "layout/contact";

@@ -1,0 +1,175 @@
+.card-slider{
+    .item-list{
+        margin: 0 12px;
+        @include media-query(767px) {
+            margin: 0;
+        }
+    }
+}
+
+.item-list{
+    background: $gray-1;
+    border-radius: 30px;
+    padding: 30px;
+    @include short-query(1199px , 1900px) {
+        padding: 15px;
+    }
+    @include media-query(490px) {
+
+        padding: 15px;
+    }
+
+    img{
+        margin-bottom: 30px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .detail-block{
+        padding: 30px;
+        background: $white;
+        border-radius: 30px;
+        @include short-query(1199px , 1900px) {
+            padding: 15px;
+        }
+        @include media-query(490px) {
+            padding: 15px;
+        }
+        .detail{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            h5{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 120%;
+                color: $black-1;
+                margin: 0;
+                @include short-query(1199px , 1900px) {
+                    font-size: 21px;
+                }
+                @include media-query(490px) {
+                    font-size: 21px;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 160%;
+                letter-spacing: 0.05em;
+                color: $black-1;
+                margin: 0;
+                @include short-query(1199px , 1900px) {
+                    font-size: 18px;
+                }
+                @include media-query(490px) {
+                    font-size: 18px;
+                }
+                b{
+                    color: $accent-1;
+                }
+                i{
+                    font-size: 28px;
+                    padding: 0 4px;
+                    color: $accent-1;
+                    @include short-query(1199px , 1900px) {
+                        font-size: 21px;
+                    }
+                    @include media-query(490px) {
+                        font-size: 21px;
+                    }
+                }
+            }
+            &:nth-child(6){
+                margin-bottom: 32px;
+            }
+        }
+        a{
+            text-align: center;
+        }
+    }
+}
+.rent{
+    .search-block{
+        padding: 20px;
+        background: $gray-1;
+        border-radius: 30px;
+        margin-bottom: 50px;
+    }
+    .choosing-area{
+        padding: 20px;
+        background: $gray-1;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        .selector {
+            width: 100%;
+            background: $white;
+            border: none;
+            box-shadow: -42px 42px 24px rgba(0, 0, 0, 0.01), -24px 24px 20px rgba(0, 0, 0, 0.03), -11px 11px 15px rgba(0, 0, 0, 0.04), -3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            letter-spacing: 0.05em;
+            color: $black-1;
+            margin-bottom: 30px;
+            &.mb-50{
+                margin-bottom: 50px;
+            }
+        }
+        .form-group {
+            display: block;
+            margin-bottom: 30px;
+            input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+            }
+            label {
+                position: relative;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 160%;
+                color: $gray-4;
+                letter-spacing: 0.05em;
+                @include short-query(1199px , 1399px) {
+                    font-size: 14px;
+                }
+        
+                @include media-query(490px) {
+                    font-size: 14px;
+                }
+            }
+            label:before {
+                content: "";
+                -webkit-appearance: none;
+                border: none;
+                background: transparent;
+                padding: 6px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 12px;
+                margin-top: -6px;
+                border: 2px solid #797D86;
+                border-radius: 5px;
+            }
+            input:checked + label{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 120%;
+                color: $black-1;
+            }
+            input:checked + label:before {
+                background: $black-1;
+                border-color: $black-1;
+            }
+        }
+    }
+}

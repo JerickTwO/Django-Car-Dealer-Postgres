@@ -1,0 +1,41 @@
+.inner-banner{
+    background: url(../media/bg/inner-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    @include media-query(1399px) {
+        background-position: left center;
+        padding: 100px 0;
+    }
+    @include media-query(992px) {
+        padding: 80px 0;
+    }
+    @include media-query(768px) {
+        padding: 60px 0;
+    }
+    @include media-query(575px) {
+        margin-top: 30px;
+        padding: 24px 0;
+    }
+
+    h2{
+        font-weight: 900;
+        font-size: 101px;
+        line-height: 120%;
+        color: $white;
+        margin: 0;
+        @include media-query(1199px) {
+            font-size: 78px;
+        }
+        @include media-query(992px) {
+            font-size: 58px;
+        }
+        @include media-query(768px) {
+            font-size: 48px;
+        }
+        @include media-query(575px) {
+            font-size: 28px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{% load static %}
+{% for car in cars %} <!-- Asume que 'cars' es una lista de objetos 'Car' pasada al template -->
+<div class="item-list">
+    <img src="{{ car.image.url }}" alt="{{ car.make }}">
+    <div class="detail-block">
+        <div class="detail">
+            <h5>{{ car.make }}</h5>
+            <p><b>${{ car.price }}</b></p>
+        </div>
+        <div class="detail">
+            <p>Seating Capacity</p>
+            <p>{{ car.seating_capacity }} Person</p>
+        </div>
+        <div class="detail">
+            <p>Transmission</p>
+            <p>{{ car.transmission }}</p>
+        </div>
+        <div class="detail">
+            <p>Model</p>
+            <p>{{ car.year }}</p>
+        </div>
+        <div class="detail">
+            <p>Miles</p>
+            <p>{{ car.miles }} K</p>
+        </div>
+        <div class="detail">
+            <p>Rating</p>
+            <p>
+                {% for car in cars %}
+                <i class="fas fa-star"></i>     
+                {% endfor %}
+            </p>
+        </div>
+        <!-- hacer que nos redirija a otra página en web -->
+    </div>
+</div>
+{% endfor %}

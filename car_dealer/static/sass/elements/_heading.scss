@@ -1,0 +1,114 @@
+.heading{
+    margin-bottom: 45px;
+    overflow: hidden;
+    display: flex;
+    @include media-query(992px) {
+        flex-direction: column;
+    }
+
+    &.text-end{
+        justify-content: end;
+        h2{
+            text-align: end;
+            @include media-query(992px) {
+                order: 1;
+            }
+        }
+        p{
+            text-align: end;
+            @include media-query(992px) {
+                order: 2;
+            }
+        }
+
+    }
+    h2{
+        font-weight: 700;
+        font-size: 57px;
+        line-height: 120%;
+        color: $black-1;
+        margin-bottom: 24px;
+        position: relative;
+        @include media-query(1199px) {
+            font-size: 44px;
+        }
+        @include media-query(768px) {
+            font-size: 34px;
+        }
+        @include media-query(480px) {
+            font-size: 28px;
+        }
+        &::before{
+            position: absolute;
+            bottom: -32px;
+            overflow: hidden;
+
+        }
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        color: $black-1;
+        padding: 0 30px;
+        @include media-query(992px) {
+            font-size: 18px;
+            padding: 0;
+            margin: 10px 0 0 0 ;
+        }
+        @include media-query(768px) {
+            font-size: 16px;
+        }
+        @include media-query(480px) {
+            font-size: 14px;
+        }
+        br{
+            @include media-query(480px) {
+                display: none;
+            }
+
+        }
+    }
+    &.left{
+        h2{
+            &::before{
+                content: url(../media/heading/left-arrow-shape.png);
+                left: 0;
+            }
+        }
+        &.st-2{
+            h2{
+                &::before{
+                    left: -30px;
+                }
+            }
+        }
+
+    }
+    &.right{
+        h2{
+            &::before{
+                content: url(../media/heading/right-arrow-shape.png);
+                right: 0;
+            }
+        }
+        &.st-2{
+            h2{
+                &::before{
+                    width: 230px;
+                    @include media-query(992px) {
+                        width: 200px;
+                    }
+                    @include media-query(768px) {
+                        width: 180px;
+                    }
+                    @include media-query(480px) {
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+

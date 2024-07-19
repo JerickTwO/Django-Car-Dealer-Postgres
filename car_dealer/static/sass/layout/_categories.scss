@@ -1,0 +1,131 @@
+.categories{
+    .categorie-block{
+        width: 100%;
+        text-align: center;
+
+        .screw-image{
+            display: inline-block;
+            transform: skewX(-11deg) skewY(0deg);
+            border-radius: 30px;
+            box-shadow: 42px 42px 24px rgba(0, 0, 0, 0.01), 24px 24px 20px rgba(0, 0, 0, 0.03), 11px 11px 15px rgba(0, 0, 0, 0.04), 3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+            position: relative;
+            width: 410px;
+            height: 752px;
+            transition: all 0.5s ease-in-out;
+            z-index: 500;
+            @include short-query(1399px , 1900px) {
+                width: 300px;
+                height: 600px;
+            }
+            @include media-query(490px) {
+                width: 300px;
+                height: 500px;
+
+            }
+            @include media-query(400px) {
+                width: 220px;
+                height: 450px;
+            }
+
+            &.st-2{
+                img{
+                    object-position: -9cqw;
+                }
+            }
+            img{
+                border-radius: 30px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: -14cqw;
+                position: relative;
+                z-index: 100;
+                transition: all 0.5s ease-in-out;
+                @include media-query(992px) {
+                    object-position: -25cqw;
+                }
+                @include media-query(768px) {
+                    object-position: -32cqw;
+                }
+                @include media-query(490px) {
+                    object-position: -48cqw;
+                }
+
+
+            }
+            &::before{
+                border-radius: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background: $gray-1;
+                z-index: 50;
+                transform: skewX(0deg) skewY(0deg);
+                transition: all 0.5s ease-in-out;
+            }
+            &::after{
+                border-radius: 30px;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                content: '';
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                border-radius: 30px;
+                z-index: 200;
+                opacity: 0;
+                background: linear-gradient(0deg, rgba(27, 28, 30, 0.6), rgba(27, 28, 30, 0.6));
+                transform: skewX(0deg) skewY(0deg);
+                transition: all 0.5s ease-in-out;
+               }
+            a{
+                padding: 12px 23px;
+                background: $white;
+                border-radius: 40px;
+                border: 2px solid $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 600;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 140%;
+                color: $black-1;
+                transition: all 0.5s ease-in-out;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+
+                &:hover{
+                    background: transparent;
+                    color: $white;
+                    transition: all 0.5s ease-in-out;
+                }
+
+            }
+            &:hover{
+                box-shadow: none;
+                img{
+                    border: 4px solid $accent-1;
+                    transition: all 0.5s ease-in-out;
+                }
+                &::before{
+                    transform: skewX(22deg) skewY(0deg);
+                    transition: all 0.5s ease-in-out;
+                }
+                &::after{
+                    opacity: 1;
+                    transition: all 0.5s ease-in-out;
+                }
+                a{
+                    transition: all 0.5s ease-in-out;
+                    opacity: 1;
+                }
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.newsletter{
+    background: url(../media/bg/newsletter-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 78px 0;
+    margin: 50px 0;
+    @include short-query(992px , 1900px) {
+        padding: 45px 0;
+    }
+    @include media-query(1199px) {
+        background-position: left;
+    }
+
+    .detail{
+        a{
+            font-weight: 900;
+            font-size: 57px;
+            line-height: 120%;
+            color: $white;
+            @include short-query(992px , 1900px) {
+                font-size: 38px;
+            }
+            @include media-query(768px) {
+                font-size: 38px;
+            }
+            @include media-query(490px) {
+                font-size: 28px;
+            }
+
+            i{
+                font-size: 48px;
+                color: $white;
+                @include media-query(768px) {
+                    font-size: 34px;
+                }
+                @include media-query(490px) {
+                    font-size: 24px;
+                }
+            }
+        }
+        h4{
+            font-weight: 400;
+            font-size: 57px;
+            line-height: 120%;
+            display: flex;
+            align-items: flex-end;
+            color: $white;
+            margin-bottom: 22px;
+            @include short-query(992px , 1900px) {
+                font-size: 38px;
+            }
+            @include media-query(768px) {
+                font-size: 38px;
+            }
+            @include media-query(490px) {
+                font-size: 28px;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: $gray-1;
+            margin: 0;
+            @include media-query(768px) {
+                font-size: 20px;
+            }
+            @include media-query(490px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+.register-block{
+    padding: 20px;
+    background: $gray-1;
+    border-radius: 30px;
+    h5{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: $black;
+        @include short-query(1399px , 1900px) {
+            font-size: 18px;
+        }
+    }
+    .form-group{
+        margin-bottom: 30px;
+    }
+}

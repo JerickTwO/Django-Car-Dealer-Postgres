@@ -1,0 +1,144 @@
+.review{
+    .heading{
+        display: inline-block;
+        h2{
+            margin-bottom: 45px;
+            @include short-query(1399px , 1900px) {
+                font-size: 44px;
+            }
+
+        }
+        p{
+            text-align: end;
+            padding: 0;
+            @include short-query(1399px , 1900px) {
+                font-size: 18px;
+            }
+
+        }
+    }
+    .review-slider-nav{
+        .item{
+            img{
+                border-radius: 10px;
+                margin: 0 auto;
+
+            }
+            @include short-query(1399px , 1900px) {
+                padding: 0 5px;
+            }
+        }
+        .slick-prev{
+            display: none!important;
+        }
+    }
+    .review-slider{
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-query(992px) {
+                flex-direction: column;
+            }
+            .review-block{
+                width: 50%;
+                padding: 30px;
+                padding-right: 0;
+                background: $gray-1;
+                border-radius: 30px 0px 0px 30px;
+                @include short-query(1399px , 1900px) {
+                    padding: 15px;
+                }
+                @include media-query(992px) {
+                    order: 2;
+                    width: 60%;
+                    padding: 20px;
+                    border-radius: 0 0px 30px 30px;
+                }
+                @include media-query(768px) {
+                    width: 90%;
+                }
+
+
+
+                .review-detail{
+                    background: $white;
+                    box-shadow: -42px 42px 24px rgba(0, 0, 0, 0.01), -24px 24px 20px rgba(0, 0, 0, 0.03), -11px 11px 15px rgba(0, 0, 0, 0.04), -3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+                    border-radius: 30px;
+                    padding: 30px;
+                    h5{
+                        font-weight: 800;
+                        font-size: 24px;
+                        line-height: 120%;
+                        color: $black-1;
+                        margin-bottom: 10px;
+                    }
+                    .stars{
+                        i{
+                            font-size: 30px;
+                            color: $accent-1;
+                            margin-right: 10px;
+                            @include media-query(490px) {
+                                font-size: 21px;
+                            }
+
+                        }
+                        margin-bottom: 30px;
+
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 160%;
+                        letter-spacing: 0.05em;
+                        color: $black-1;
+                        margin: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 7;
+                            line-clamp: 7; 
+                        -webkit-box-orient: vertical;
+                        @include short-query(1399px , 1900px) {
+                            font-size: 18px;
+                            -webkit-line-clamp: 6;
+                            line-clamp: 6; 
+                        }
+                        @include media-query(992px) {
+                            font-size: 18px;
+                            -webkit-line-clamp: 3;
+                            line-clamp: 3; 
+                        }
+                        @include media-query(768px) {
+                            font-size: 16px;
+                        }
+
+
+                    }
+                }
+            }
+            img{
+                border-radius: 30px;
+                @include short-query(1399px , 1900px) {
+                    width: 450px;
+                }
+                @include media-query(1199px) {
+                    width: 450px;
+                }
+                @include media-query(992px) {
+                    order: 1;
+                    width: 70%;
+                    height: 450px;
+                    object-fit: fill;
+                }
+                @include media-query(768px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .slick-prev{
+            display: none!important;
+        }
+    }
+
+}

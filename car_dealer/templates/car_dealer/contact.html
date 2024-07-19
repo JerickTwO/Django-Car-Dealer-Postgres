@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+    <meta name="description"
+        content="Discover the best car dealership for buying and selling quality vehicles. We offer top-notch service and a wide selection of cars to choose from.">
+
+    <title>Best Vehicle Dealership - Buy and Sell Cars</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'dealer/favicon.png' %}">
+
+    <!-- All CSS files -->
+
+    <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/slick-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/vendor/sal.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/app.css' %}" />
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="wheel" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 254.532 254.532" xml:space="preserve">
+                <g>
+                    <path id="tire" d="M127.267,0C57.092,0,0,57.091,0,127.266s57.092,127.266,127.267,127.266c70.174,0,127.266-57.091,127.266-127.266
+                        S197.44,0,127.267,0z M127.267,217.656c-49.922,0-90.391-40.468-90.391-90.39s40.469-90.39,90.391-90.39
+                        c49.92,0,90.39,40.468,90.39,90.39S177.186,217.656,127.267,217.656z"></path>
+                    <path id="rim"
+                        d="M127.267,48.578c-43.39,0-78.689,35.299-78.689,78.688c0,43.389,35.3,78.688,78.689,78.688
+                        c43.389,0,78.688-35.299,78.688-78.688C205.955,83.877,170.655,48.578,127.267,48.578z M195.878,122.249h-38.18
+                        c-0.78-4.825-2.686-9.275-5.435-13.079l26.954-26.954C188.679,93.112,194.771,106.996,195.878,122.249z M132.204,58.648
+                        c15.244,1.087,29.123,7.156,40.025,16.591l-26.948,26.949c-3.804-2.748-8.253-4.653-13.077-5.433V58.648z M122.329,58.648v38.106
+                        c-4.824,0.78-9.274,2.685-13.078,5.434L82.302,75.24C93.204,65.805,107.085,59.735,122.329,58.648z M75.313,82.217l26.955,26.954
+                        c-2.749,3.803-4.654,8.253-5.434,13.077h-38.18C59.761,106.996,65.853,93.113,75.313,82.217z M58.643,132.123h38.192
+                        c0.779,4.824,2.685,9.274,5.434,13.078l-27.029,27.029C65.788,161.308,59.714,147.398,58.643,132.123z M122.329,195.884
+                        c-15.285-1.09-29.197-7.188-40.113-16.666l27.035-27.035c3.804,2.749,8.254,4.654,13.078,5.434V195.884z M122.329,147.459v0.072
+                        c-2.131-0.518-4.131-1.36-5.953-2.474l0.047-0.047c-2.85-1.738-5.244-4.132-6.982-6.983l-0.046,0.046
+                        c-1.114-1.822-1.956-3.821-2.474-5.952h0.071c-0.385-1.585-0.611-3.233-0.611-4.937c0-1.704,0.227-3.352,0.611-4.937h-0.071
+                        c0.518-2.13,1.359-4.129,2.474-5.951l0.046,0.046c1.738-2.85,4.133-5.245,6.982-6.982l-0.047-0.047
+                        c1.822-1.114,3.822-1.957,5.953-2.474v0.072c1.586-0.385,3.233-0.612,4.938-0.612s3.352,0.227,4.938,0.612v-0.072
+                        c2.131,0.518,4.13,1.359,5.951,2.473l-0.047,0.047c2.851,1.737,5.245,4.132,6.983,6.982l0.046-0.046
+                        c1.115,1.822,1.957,3.822,2.475,5.953h-0.071c0.385,1.585,0.611,3.233,0.611,4.937c0,1.704-0.227,3.352-0.611,4.937h0.071
+                        c-0.518,2.131-1.359,4.131-2.475,5.953l-0.046-0.046c-1.738,2.85-4.133,5.244-6.983,6.982l0.047,0.046
+                        c-1.821,1.114-3.82,1.956-5.951,2.474v-0.072c-1.586,0.385-3.233,0.612-4.938,0.612S123.915,147.845,122.329,147.459z
+                        M132.204,195.884v-38.267c4.824-0.78,9.273-2.685,13.077-5.433l27.034,27.034C161.4,188.696,147.488,194.794,132.204,195.884z
+                        M179.292,172.23l-27.028-27.028c2.749-3.804,4.654-8.254,5.435-13.079h38.191C194.818,147.398,188.745,161.308,179.292,172.23z">
+                    </path>
+                </g>
+            </svg>
+            <div class="road"></div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+
+        <!-- Header Area Start -->
+        <header class="header st-2">
+            <div class="container">
+                {% include 'includes/navbar.html' %}
+            </div>
+        </header>
+        <!-- Header Area end -->
+
+        <!-- inner banner Area start -->
+        <section class="inner-banner "  style='background: url("{% static "dealer/bg/newsletter-bg.webp" %}");'>
+            <div class="container">
+                <h2 id="text-rent">Contact Us</h2>
+            </div>
+        </section>
+        <!-- inner banner Area end -->
+
+
+        <!-- contact Area start -->
+        <div class="contact p-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-5 col-12">
+                        <div class="contact-block mb-xxl-0 mb-24">
+                            <h2>Let's Connect, Reach Out to DriveLux</h2>
+                            <p>Have a question, need assistance, or ready to make a reservation? We're here to help. Use
+                                the contact information or fill out the form below to get in touch with DriveLux.</p>
+                            <form method="post" action="./index.html" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group mb-24">
+                                            <input type="text" class="form-control" id="name" name="name" required
+                                                placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group mb-24">
+                                            <input type="email" class="form-control" id="email" name="email" required
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group mb-24">
+                                            <input type="text" class="form-control" id="topic" name="topic" required
+                                                placeholder="Your Topic">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="form-group mb-24">
+                                            <input type="tel" class="form-control" id="phone" name="phone" required
+                                                placeholder="Your Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-48">
+                                            <textarea class="form-control" required name="message"
+                                                placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="dark-btn w-100">Send Message</button>
+                                </div>
+                                <div id="message" class="alert-msg"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-12">
+                        <div class="info-block">
+                            <img src="{% static './dealer/contact/map-image.png' %}" alt="">
+                            <div class="information-section">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="information-block">
+                                            <div class="icon">
+                                                <i class="fal fa-phone-alt"></i>
+                                            </div>
+                                            <a href="tel:123">+1 551 451 0313</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 pt-md-0 pt-4">
+                                        <div class="information-block">
+                                            <div class="icon">
+                                                <i class="fal fa-envelope"></i>
+                                            </div>
+                                            <a href="">Email@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 pt-lg-0 pt-4">
+                                        <div class="information-block ">
+                                            <div class="icon">
+                                                <i class="fal fa-map-marker-alt"></i>
+                                            </div>
+                                            <a>692 E 182nd St, Bronx, NY 10457</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact Area end -->
+        {% include 'includes/footer.html' %}
+
+    </div>
+    <!-- Jquery Js -->
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-3.6.3.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/vendor/slick.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-appear.js' %}"></script>
+    <script src="{% static 'js/vendor/sal.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-validator.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+
+</html>

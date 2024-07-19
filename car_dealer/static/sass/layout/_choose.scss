@@ -1,0 +1,37 @@
+.choose{
+    .choose-block{
+        padding: 30px;
+        border-radius: 30px;
+        background: $gray-1;
+        @include short-query(1399px , 1900px) {
+            padding: 20px;
+        }
+
+        .icon{
+            background: $white;
+            box-shadow: 42px 42px 24px rgba(0, 0, 0, 0.01), 24px 24px 20px rgba(0, 0, 0, 0.03), 11px 11px 15px rgba(0, 0, 0, 0.04), 3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+            border-radius: 100px;
+            padding: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 120%;
+            color: $black;
+            margin: 0;
+            @include short-query(1399px , 1900px) {
+                font-size: 24px;
+            }
+            @include media-query(1399px) {
+                font-size: 28px;
+            }
+            @include media-query(1199px) {
+                font-size: 24px;
+            }
+
+        }
+
+    }
+}

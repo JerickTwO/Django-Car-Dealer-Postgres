@@ -1,0 +1,104 @@
+.contact{
+    .contact-block{
+        background: $gray-1;
+        border-radius: 30px;
+        padding: 30px;
+        h2{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 120%;
+            color: $black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            letter-spacing: 0.05em;
+            color: $gray-4;
+            margin-bottom: 50px;
+
+        }
+    }
+    .info-block{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+            @include media-query(768px) {
+                display: none;
+            }
+
+
+        }
+        .information-section{
+            padding: 0 57px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include short-query(1399px , 1900px) {
+                padding: 0 15px;
+            }
+            @include media-query(1199px) {
+                padding: 0 15px;
+
+            }
+            @include media-query(768px) {
+                display: block;
+                position: relative;
+                top: unset;
+                left: unset;
+            }
+
+
+
+            .information-block{
+                background: $gray-1;
+                border-radius: 30px;
+                padding: 30px;
+                height: 100%;
+                @include short-query(1399px , 1900px) {
+                    padding: 15px;
+                }
+                @include media-query(992px) {
+                   margin-bottom: 20px;
+    
+                }
+                .icon{
+                    width: 72px;
+                    height: 72px;
+                    background: $white;
+                    box-shadow: 42px 42px 24px rgba(0, 0, 0, 0.01), 24px 24px 20px rgba(0, 0, 0, 0.03), 11px 11px 15px rgba(0, 0, 0, 0.04), 3px 3px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+                    border-radius: 100px;
+                    display: grid;
+                    place-items: center;
+                    margin-bottom: 10px;
+                    i{
+                        font-size: 32px;
+                        color: $gray-3;
+                    }
+                }
+                a{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 120%;
+                    color: $black;
+                    margin-bottom: 0;
+                    @include short-query(1399px , 1900px) {
+                        font-size: 16px;
+                    }
+                    &:hover{
+                        color: $accent-1;
+                    }
+                }
+    
+            }
+        }
+    }
+}
