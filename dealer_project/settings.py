@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 # Application definition
@@ -130,7 +130,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-ALLOWED_HOSTS=['localhost', 'cisne-car.up.railway.app']
+ALLOWED_HOSTS=['cisne-car.up.railway.app', 'localhost']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -139,3 +139,5 @@ STATICFILES_DIRS = [
 ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+CSRF_TRUSTED_ORIGINS = ['cisne-car.']
