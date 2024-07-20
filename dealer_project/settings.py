@@ -10,7 +10,7 @@ load_dotenv()  # Load environment variables from a .env file
 
 
 SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$'
-DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
+DEBUG =True
 
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
