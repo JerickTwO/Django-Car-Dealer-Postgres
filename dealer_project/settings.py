@@ -10,6 +10,7 @@ load_dotenv()  # Load environment variables from a .env file
 
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+
 DEBUG = True
 
 DATABASES = {
