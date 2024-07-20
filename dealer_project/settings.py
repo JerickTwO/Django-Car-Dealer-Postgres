@@ -10,7 +10,6 @@ load_dotenv()  # Load environment variables from a .env file
 
 
 SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$'
-
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 DATABASES = {
@@ -34,7 +33,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware', 
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware', 
@@ -115,6 +114,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-217f7.up.railway.app']
