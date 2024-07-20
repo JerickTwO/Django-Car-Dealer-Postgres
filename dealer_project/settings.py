@@ -10,11 +10,10 @@ load_dotenv()  # Load environment variables from a .env file
 
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
 }
 
 
