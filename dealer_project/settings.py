@@ -116,4 +116,4 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-CSRF_TRUSTED_ORIGINS = ['http://*','https://cisne-car.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-217f7.up.railway.app']
