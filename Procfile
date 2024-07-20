@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput && gunicorn dealer_project.wsgi 0.0.0.0:8000
+web: python manage.py collectstatic --noinput && gunicorn dealer_project.wsgi

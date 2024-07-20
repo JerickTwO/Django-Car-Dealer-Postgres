@@ -13,8 +13,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
-    'PORT': 5432,
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
