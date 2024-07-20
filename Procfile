@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput && gunicorn dealer_project.wsgi --workers 3
+web: python manage.py collectstatic --noinput && gunicorn dealer_project.wsgi --workers 3 && gunicorn dealer_project.wsgi --bind 0.0.0.0:$PORT
