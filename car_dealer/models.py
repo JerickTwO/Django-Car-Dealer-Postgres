@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Car(models.Model):
     make = models.CharField(max_length=100)  # Marca del coche
     year = models.IntegerField(default=2024)  # Año del coche
@@ -10,16 +9,16 @@ class Car(models.Model):
     TRANSMISSION_CHOICES = [
         ('manual', 'Manual'),
         ('automatic', 'Automatic'),
-        ('semiautomatic', 'Semi-Automatic'),  # Añadiendo una opción más, si necesario
-        ('cvt', 'CVT')  # Añadiendo otra opción más, si necesario
+        ('semiautomatic', 'Semi-Automatic'),
+        ('cvt', 'CVT')
     ]
     transmission = models.CharField(
         max_length=50,
         choices=TRANSMISSION_CHOICES,
-        default='manual'  # Valor por defecto
-    )  # Tipo de transmisión
-    miles = models.DecimalField(max_digits=10, decimal_places=0, default=0)  # Millas recorridas
-    rating = models.IntegerField(default=0)  # Calificación en estrellas
+        default='manual'
+    )
+    miles = models.DecimalField(max_digits=10, decimal_places=0, default=0)
+    rating = models.IntegerField(default=0)
 
     def __str__(self):
         return f'{self.make} {self.year}'
