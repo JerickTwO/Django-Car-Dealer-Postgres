@@ -13,7 +13,10 @@ SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$
 DEBUG =True
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL')),
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
