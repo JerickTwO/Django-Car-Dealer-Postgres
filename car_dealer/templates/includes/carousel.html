@@ -1,5 +1,5 @@
 {% load static %}
-{% for car in cars %} <!-- Asume que 'cars' es una lista de objetos 'Car' pasada al template -->
+{% for car in cars %}
 <div class="item-list">
     <img src="{{ car.image.url }}" alt="{{ car.make }}">
     <div class="detail-block">
@@ -13,7 +13,7 @@
         </div>
         <div class="detail">
             <p>Transmission</p>
-            <p>{{ car.transmission }}</p>
+            <p>{{ car.get_transmission_display }}</p> <!-- Asegura mostrar la versión legible de la transmisión -->
         </div>
         <div class="detail">
             <p>Model</p>
@@ -26,12 +26,11 @@
         <div class="detail">
             <p>Rating</p>
             <p>
-                {% for car in cars %}
-                <i class="fas fa-star"></i>     
+                {% for star in car.stars %}
+                ★
                 {% endfor %}
             </p>
         </div>
-        <!-- hacer que nos redirija a otra página en web -->
     </div>
 </div>
 {% endfor %}
