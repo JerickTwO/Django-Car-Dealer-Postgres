@@ -10,6 +10,7 @@ load_dotenv()  # Load environment variables from a .env file
 
 
 SECRET_KEY = 'django-insecure-b#ajq=(t8&ad59pabl3&2n)++3oj&w#x_hopl=a*zf%h6o@xb$'
+
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 DATABASES = {
@@ -114,6 +115,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CSRF_TRUSTED_ORIGINS = ['http://*','https://web-production-217f7.up.railway.app']
