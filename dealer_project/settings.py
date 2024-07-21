@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()  # Carga las variables de entorno desde un archivo .env
 
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
-DEBUG = False
+DEBUG = 'RENDER' not in os.environ
 
 DATABASES = {
     'default': dj_database_url.config(
@@ -90,7 +90,7 @@ if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'car_dealer/static/media')
 
 ALLOWED_HOSTS = ['*']
