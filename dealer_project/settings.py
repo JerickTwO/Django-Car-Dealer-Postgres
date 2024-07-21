@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()  # Carga las variables de entorno desde un archivo .env
 
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 DATABASES = {
     'default': dj_database_url.config(
@@ -17,7 +17,6 @@ DATABASES = {
         conn_max_age=600
     )
 }
-
 # Definición de la aplicación
 
 INSTALLED_APPS = [
@@ -106,3 +105,4 @@ STATICFILES_DIRS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = ['http://*', 'https://cisne-car.onrender.com']
+
