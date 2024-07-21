@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()  # Carga las variables de entorno desde un archivo .env
 
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
-DEBUG = True
+DEBUG = False
 
 DATABASES = {
     'default': dj_database_url.config(
