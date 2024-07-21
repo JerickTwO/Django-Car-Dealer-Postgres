@@ -38,12 +38,12 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware', 
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware', 
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'dealer_project.urls'
@@ -131,6 +131,3 @@ if RENDER_EXTERNAL_HOSTNAME:
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
 ]
-
-
-CSRF_TRUSTED_ORIGINS = ['http://*','https://django-car-dealer-postgres-production.up.railway.app']
