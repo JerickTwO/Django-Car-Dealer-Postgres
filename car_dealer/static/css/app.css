@@ -2784,7 +2784,6 @@ a#boton-medio {
 
 .rent .choosing-area .form-group label:before {
   content: "";
-  -webkit-appearance: none;
   border: none;
   background: transparent;
   padding: 6px;
@@ -3414,7 +3413,6 @@ a#boton-medio {
 
 .booking-total .detail-block .total-area .detail .form-group label:before {
   content: "";
-  -webkit-appearance: none;
   border: none;
   background: transparent;
   padding: 6px;
