@@ -7,7 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('car_dealer.urls')),  # Incluir las URLs de car_dealer
 ]
-
-
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
