@@ -273,6 +273,7 @@
             .attr("disabled", "disabled");
           var data = $(this).serialize();
           $.ajax({
+            url: "./assets/mail/contact.php",
             type: "post",
             dataType: "json",
             data: data,
