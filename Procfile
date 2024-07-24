@@ -1,0 +1,1 @@
+web: python manage.py collectstatic --input && gunicorn dealer_project.wsgi
