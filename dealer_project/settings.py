@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()  # Carga las variables de entorno desde un archivo .env
 
 SECRET_KEY = '1-js)4-7iq23)^#c+wyd2l7lnp^k#df3lcdac=i6t^1#x(0mvo'
-DEBUG = True
+DEBUG = False
 
 DATABASES = {
         'default': {
@@ -101,5 +101,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
 ]
 
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://cisne-car.up.railwind']
+
 
