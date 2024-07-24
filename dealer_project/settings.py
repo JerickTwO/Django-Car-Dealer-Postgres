@@ -7,15 +7,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()  # Carga las variables de entorno desde un archivo .env
 
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
-DEBUG = 'RENDER' not in os.environ
+SECRET_KEY = '1-js)4-7iq23)^#c+wyd2l7lnp^k#df3lcdac=i6t^1#x(0mvo'
+DEBUG = True
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://cardealer_w75m_user:3LlKBQch1CvM5k4QRmFzFRtFmF0mWoqV@dpg-cqeibh08fa8c73e7ufk0-a.oregon-postgres.render.com/cardealer_w75m',
-        conn_max_age=600
-    )
+        'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+    
 }
 # Definición de la aplicación
 
@@ -96,14 +96,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ALLOWED_HOSTS = ['*']
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'car_dealer/static'),
 ]
 
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://cisne-car.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://cisne-car.up.railwind']
 
